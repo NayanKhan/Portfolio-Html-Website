@@ -1,0 +1,1571 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+body {}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+img,
+address,
+figure,
+figcaption {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.common_text h2 {
+    color: #777;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.common_text h2 span {
+    font-family: 'Clicker Script', cursive;
+    background: #E02217;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0px 5px;
+}
+
+.common_text h2:before {
+    position: absolute;
+    bottom: -15px;
+    left: 43%;
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: #E02217;
+}
+
+.common_text h2:after {
+    position: absolute;
+    bottom: -15px;
+    left: 51%;
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: #E02217;
+}
+
+.common_text i {
+    font-size: 15px;
+    color: #212529;
+    padding-top: 7px;
+}
+
+.common_text p {
+    font-size: 14px;
+    color: #777;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 5px 225px 10px;
+}
+
+/**********************************************
+     common part ends 
+***********************************************/
+
+/**********************************************
+     header part start 
+***********************************************/
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.scroll-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #222;
+    z-index: 99999;
+    width: 100%;
+}
+
+#top_to_scroll {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #E02217;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header .navbar .navbar-brand {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Clicker Script', cursive;
+    background: #E02217;
+    padding: 2px 8px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.header nav .navbar-nav .nav-item {
+    padding: 0px 15px;
+}
+
+.header nav .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 0px;
+    position: relative;
+    transition: all linear .4s;
+    line-height: 70px;
+    overflow: hidden;
+}
+
+.header nav .navbar-nav .nav-item .nav-link:before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    background: #E02217;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transition: all linear .4s;
+}
+
+.header nav .navbar-nav .nav-item .nav-link.active,
+.header nav .navbar-nav .nav-item .nav-link:hover {
+    color: #E02217;
+}
+
+.header nav .navbar-nav .nav-item .nav-link.active:before,
+.header nav .navbar-nav .nav-item .nav-link:hover:before {
+    opacity: 1;
+    left: 0%;
+}
+
+/**********************************************
+     header part ends 
+***********************************************/
+
+/**********************************************
+     banner part start 
+***********************************************/
+
+#banner {
+    background: url(../images/banner2.jpg) no-repeat center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
+}
+
+#banner .bnr_overlay {
+    background: rgba(0, 0, 0, .9);
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
+}
+
+#banner .bnr_overlay .banner_content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
+#banner .bnr_overlay .banner_content h3 {
+    font-size: 25px;
+    color: #caa669;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+#banner .bnr_overlay .banner_content h1 {
+    font-size: 55px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#banner .bnr_overlay .banner_content p {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+
+#banner .bnr_overlay .banner_content a {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #E02217;
+    padding: 0px 30px;
+    display: inline-block;
+    line-height: 40px;
+    border-radius: 30px;
+    transition: all linear .4s;
+}
+
+#banner .bnr_overlay .banner_content a:hover {
+    background: #fff;
+    color: #1E1F25;
+}
+
+/**********************************************
+     banner part ends 
+***********************************************/
+
+/**********************************************
+     about part start 
+***********************************************/
+
+#about {
+    padding: 60px 0px;
+}
+
+#about .about_img {
+    margin-top: 30px;
+    width: 100%;
+    height: 370px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(6, 6, 6, .2);
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+#about .about_img img {
+    height: 100%;
+}
+
+#about .about_img .img_overlay {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 50%;
+    background: rgba(0, 0, 0, .6);
+    transition: all linear .4s;
+    opacity: 0;
+}
+
+#about .about_img:hover .img_overlay {
+    opacity: 1;
+    right: 0;
+}
+
+#about .about_img .img_overlay ul {
+    margin-top: 30px;
+}
+
+#about .about_img .img_overlay ul li i {
+    line-height: 40px;
+    width: 40px;
+    border-radius: 10px 0px;
+    background: #E02217;
+    color: #fff;
+    display: inline-block;
+    margin: 10px 0px;
+    transition: all linear .3s;
+    font-size: 16px;
+}
+
+#about .about_content {
+    padding-top: 30px;
+}
+
+#about .about_content h3 {
+    color: #777;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+#about .about_content h3 span {
+    font-family: 'Clicker Script', cursive;
+    color: #E02217;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+#about .about_content h4 {
+    color: #caa669;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+#about .about_content p {
+    font-size: 14px;
+    color: #444;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+#about .about_content ul {
+    padding-top: 20px;
+}
+
+#about .about_content ul li {
+    font-size: 16px;
+    color: #666;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#about .about_content ul li span {
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+#about .about_content .bar_item h4 {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #777;
+    font-family: 'open sans', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#about .about_content .bar_item .barfiller {
+    width: 100%;
+    height: 8px;
+    background: #777;
+    position: relative;
+    margin-top: 15px;
+}
+
+#about .about_content .bar_item .barfiller .fill {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background: #caa669 !important;
+    z-index: 99;
+}
+
+#about .about_content .bar_item .barfiller .tipWrap {
+    display: none;
+}
+
+#about .bar_item .barfiller .tip {
+    margin-top: -30px;
+    padding: 2px 4px;
+    font-size: 11px;
+    color: #fff;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+    background: #E02217;
+}
+
+#about .bar_item .barfiller .tip:after {
+    border: solid;
+    border-color: #E02217 transparent;
+    border-width: 6px 6px 0 6px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 9px;
+    top: 100%;
+    z-index: 9
+}
+
+/**********************************************
+     about part ends 
+***********************************************/
+
+/**********************************************
+     about part ends 
+***********************************************/
+
+#services {
+    padding: 60px 0px;
+    background: #FAFAFA;
+}
+
+#services .ser_item {
+    margin-top: 30px;
+    position: relative;
+    transition: all linear .3s;
+    background: #FFF;
+    box-shadow: 0px 0px 10px rgba(34, 34, 34, 0.2);
+    border-radius: 10px;
+}
+
+#services .ser_item:hover {}
+
+#services .ser_item:hover:after,
+#services .ser_item:hover:before {
+    opacity: 1;
+}
+
+#services .ser_item:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    border-left: 2px solid #E02217;
+    border-top: 2px solid #E02217;
+    transition: all linear .3s;
+    border-radius: 10px 0px;
+    opacity: 0
+}
+
+#services .ser_item:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    border-right: 2px solid #E02217;
+    border-bottom: 2px solid #E02217;
+    border-radius: 10px 0px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+#services .ser_item .ser_icon i {
+    font-size: 30px;
+    color: #E02217;
+    padding-top: 30px;
+}
+
+#services .ser_item .ser_content h4 {
+    color: #777;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+#services .ser_item .ser_content p {
+    color: #444;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding: 10px 10px 30px;
+}
+
+/**********************************************
+     about part ends 
+***********************************************/
+
+/**********************************************
+     portfolio part start 
+***********************************************/
+
+#portfolio {
+    padding: 60px 0px;
+}
+
+#portfolio .port_menu {
+    margin-top: 40px;
+}
+
+#portfolio .port_menu button {
+    font-family: 'Clicker Script', cursive;
+    background: #222;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    line-height: 35px;
+    display: inline-block;
+    border: 0;
+    padding: 0px 8px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#portfolio .port_menu button.active {
+    background: #E02217;
+}
+
+#portfolio .port_img {
+    margin-top: 30px;
+    height: 350px;
+    transition: all linear .4s;
+    overflow: hidden;
+    position: relative;
+}
+
+#portfolio .port_img:hover img {
+    transform: scale(1.4);
+}
+
+#portfolio .port_img:hover .port_overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#portfolio .port_img img {
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    transition: all linear .4s;
+}
+
+#portfolio .port_img .port_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(34, 34, 34, .9);
+    text-align: center;
+    transform: scale(0);
+    transition: all linear .4s;
+    opacity: 0;
+}
+
+#portfolio .port_img .port_overlay i {
+    color: #E02217;
+    font-size: 22px;
+    border: 2px solid #E02217;
+    line-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/**********************************************
+     portfolio part ends 
+***********************************************/
+
+/**********************************************
+     counter part start 
+***********************************************/
+
+#counter {
+    background: url(../images/counter-bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#counter .counter_overlay {
+    background: rgba(0, 0, 0, .9);
+    padding: 60px 0px;
+}
+
+#counter .counter_overlay i {
+    font-size: 30px;
+    color: #fff;
+}
+
+#counter .counter_overlay h3 {
+    color: #E02217;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+#counter .counter_overlay p {
+    color: #f1f1f1;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+
+/**********************************************
+     counter part ends 
+***********************************************/
+
+/**********************************************
+     team part start 
+***********************************************/
+
+#team {
+    padding: 60px 0px;
+}
+
+#team .team_member {
+    transition: all linear .3s;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+#team .team_member .team_image {
+    background: #F1F1F1;
+}
+
+#team .team_member .team_image img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 5px;
+}
+
+#team .team_member .team_content {
+    position: absolute;
+    width: 100%;
+    padding-top: 10px;
+    background: #222;
+    transition: all linear .3s;
+    bottom: -50px;
+    left: 0;
+}
+
+#team .team_member:hover .team_content {
+    bottom: 0px;
+}
+
+#team .team_member .team_content h4 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+#team .team_member .team_content h5 {
+    color: #CAA669;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+#team .team_member .team_content ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#team .team_member .team_content ul li a i {
+    border: 1px solid #fff;
+    line-height: 30px;
+    width: 30px;
+    font-size: 14px;
+    color: #FFF;
+    display: inline-block;
+    transition: all linear .3s;
+    margin: 0px 3px;
+}
+
+#team .team_member .team_content ul li a i:hover {
+    background: #E02217;
+    border-color: #E02217;
+    color: #fff;
+}
+
+/**********************************************
+     team part ends 
+***********************************************/
+
+/**********************************************
+     testimonial part start 
+***********************************************/
+
+#testimonial {
+    padding: 60px 0px 100px;
+    position: relative;
+    background: #FAFAFA;
+}
+
+#testimonial .test_item {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#testimonial .test_item .test_img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#testimonial .test_item .test_img1 {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: #000;
+    margin: 4px;
+}
+
+#testimonial .test_img1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#testimonial .test_item .test_content p {
+    color: #444;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding: 10px 220px;
+}
+
+#testimonial .test_item .test_content ul li {
+    display: inline;
+}
+
+#testimonial .test_item .test_content ul li i {
+    font-size: 16px;
+    color: #caa669;
+}
+
+#testimonial .test_item .test_content h3 {
+    color: #777;
+    text-transform: capitalize;
+    padding-top: 5px;
+    font-family: 'Clicker Script', cursive;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#testimonial .test_item .test_content h3 span {
+    font-family: 'Clicker Script', cursive;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#testimonial .test_item .test_content h5 {
+    color: #777;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+#testimonial .slick-dots {
+    position: absolute;
+    left: 47%;
+    bottom: -40px;
+}
+
+#testimonial .slick-dots li {
+    float: left;
+}
+
+#testimonial .slick-dots li button {
+    height: 6px;
+    width: 15px;
+    margin: 0px 3px;
+    border: 0;
+    font-size: 0;
+    background: #E02217;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#testimonial .slick-dots li.slick-active button {
+    background: #caa669;
+    width: 20px;
+}
+
+/**********************************************
+     testimonial part ends 
+***********************************************/
+
+/**********************************************
+     works part start 
+***********************************************/
+
+#works {
+    padding: 60px 0px;
+    background: #080808;
+    text-align: center;
+}
+
+#works p {
+    color: #a7a7a7;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+#works h3 {
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#works h3 span {
+    font-weight: 500;
+}
+
+#works a {
+    color: #fff;
+    text-transform: capitalize;
+    padding: 0px 30px;
+    border-radius: 5px;
+    line-height: 35px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    background: #E02217;
+    margin-top: 20px;
+}
+
+/**********************************************
+     works part end 
+***********************************************/
+
+/**********************************************
+     blog part start 
+***********************************************/
+
+#blog {
+    padding: 60px 0px;
+    background: #FAFAFA;
+}
+
+#blog .blog_item {
+    background: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 30px;
+}
+
+#blog .blog_item .blog_img {
+    margin: 0px 10px;
+    height: 190px;
+    position: relative;
+}
+
+/*
+#blog .blog_item .blog_img .blog_img_slide img{
+    max-height: 100%;
+}
+#blog .blog_item .blog_img .blog_img_slide{
+    height: 190px;
+}
+*/
+
+#blog .blog_item .blog_img img {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#blog .blog_item .blog_img a .video_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 5px;
+}
+
+#blog .blog_item .blog_img a .video_overlay i {
+    height: 40px;
+    width: 40px;
+    color: #E02217;
+    font-size: 60px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slidPrv3 {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #E02217;
+    line-height: 38px;
+    font-size: 25px;
+    transform: translateY(-50%);
+    z-index: 99;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    cursor: pointer;
+}
+
+.slidNext3 {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    color: #E02217;
+    line-height: 38px;
+    font-size: 25px;
+    transform: translateY(-50%);
+    z-index: 99;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    cursor: pointer;
+}
+
+#blog .blog_item .blog_content {
+    padding: 20px 0px;
+}
+
+#blog .blog_item .blog_content h5 {
+    color: #444;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#blog .blog_item .blog_content h4 {
+    padding-top: 10px;
+    color: #777;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#blog .blog_item .blog_content p {
+    color: #a7a7a7;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding: 10px 5px;
+}
+
+#blog .blog_item .blog_content a {
+    color: #fff;
+    text-transform: capitalize;
+    padding: 0px 30px;
+    border-radius: 5px;
+    line-height: 35px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    background: #E02217;
+}
+
+/**********************************************
+     blog part ends 
+***********************************************/
+
+/**********************************************
+     footer part start 
+***********************************************/
+/**********************************************
+     contact part start 
+***********************************************/
+
+#contact {
+    background: url(../images/ft.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact .contact_overlay {
+    background: rgba(0, 0, 0, .7);
+    padding: 60px 0px;
+}
+
+#contact .contact_overlay .common_text h2 {
+    color: #fff;
+}
+
+#contact .contact_overlay .common_text i {
+    color: #fff;
+}
+
+#contact .contact_overlay input {
+    width: 100%;
+    border: 0;
+    background: rgba(34, 34, 34, .7);
+    height: 40px;
+    color: #fff;
+    margin-top: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#contact .contact_overlay textarea {
+    width: 100%;
+    border: 0;
+    background: rgba(34, 34, 34, .7);
+    height: 100px;
+    color: #fff;
+    margin-top: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+
+
+#contact .contact_overlay .btn input{
+    background: rgba(224, 34, 23, .4);
+    cursor: pointer;
+}
+
+
+/**********************************************
+     contact part ends 
+***********************************************/
+
+footer {
+    text-align: center;
+    background: #000;
+}
+
+footer p {
+    color: #fff;
+    line-height: 60px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+footer p span {
+    color: #E02217;
+    text-transform: capitalize;
+    padding: 0px 5px;
+    font-weight: 500;
+}
+
+/**********************************************
+     footer part end 
+***********************************************/
+
+/**********************************************
+     color pallate part start
+***********************************************/
+
+.switcher_box {
+    width: 200px;
+    background: #ddd;
+    position: fixed;
+    top: 300px;
+    right: -200px;
+    text-align: center;
+    transition: all linear 0.3s;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.switcher_box span .fa {
+    position: absolute;
+    right: 100%;
+    top: 10px;
+    font-size: 35px;
+    color: #fff;
+    line-height: 40px;
+    width: 40px;
+    background: #E02217;
+}
+
+.switcher_box h4 {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.switcher_box .color_list li {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.switcher_box .color_list .blue {
+    background: rgb(7, 71, 87);
+}
+
+.switcher_box .color_list .orange {
+    background: #FF5722;
+}
+
+
+.switcher_box .color_list .red {
+    background: #E02217;
+}
+
+.switcher_box .color_list .green {
+    background: #1ABC9C;
+}
+
+.switcher_box .color_list .sky {
+    background: #8BC34A;
+}
+
+.switcher_box .color_list .yellow {
+    background: #673AB7;
+}
+
+.switcher_box_open {
+    right: 0;
+}
+
+/* blue_bg start here */
+
+.blue_bg #banner .bnr_overlay .banner_content a,
+.blue_bg .common_text h2 span,
+.blue_bg .header nav .navbar-nav .nav-item .nav-link:before,
+.blue_bg .header .navbar .navbar-brand,
+.blue_bg .common_text h2:before,
+.blue_bg .common_text h2:after,
+.blue_bg #about .about_img .img_overlay ul li i,
+.blue_bg #about .bar_item .barfiller .tip,
+.blue_bg #portfolio .port_menu button.active,
+.blue_bg #team .team_member .team_content ul li a i:hover,
+.blue_bg .switcher_box span .fa,
+.blue_bg #testimonial .slick-dots li button,
+.blue_bg #works a,
+.blue_bg #blog .blog_item .blog_content a,
+.blue_bg #top_to_scroll,
+.blue_bg #team .slidNext4,
+.blue_bg #team .slidPrv4{
+    background: rgb(7, 71, 87);
+}
+
+.blue_bg .header nav .navbar-nav .nav-item .nav-link.active,
+.blue_bg .header nav .navbar-nav .nav-item .nav-link:hover,
+.blue_bg #about .about_content h3 span,
+.blue_bg #services .ser_item .ser_icon i,
+.blue_bg #portfolio .port_img .port_overlay i,
+.blue_bg #counter .counter_overlay h3,
+.blue_bg #blog .blog_item .blog_img a .video_overlay i,
+.blue_bg .slidPrv3,
+.blue_bg .slidNext3,
+.blue_bg footer p span {
+    color: rgb(7, 71, 87);
+}
+
+.blue_bg #portfolio .port_img .port_overlay i {
+    border: 2px solid rgb(7, 71, 87);
+}
+
+.blue_bg #about .bar_item .barfiller .tip:after,
+.blue_bg #team .team_member .team_content ul li a i:hover {
+    border-color: rgb(7, 71, 87) transparent;
+}
+
+.blue_bg #services .ser_item:before {
+    border-left: 2px solid rgb(7, 71, 87);
+    border-top: 2px solid rgb(7, 71, 87);
+}
+
+.blue_bg #services .ser_item:after {
+    border-right: 2px solid rgb(7, 71, 87);
+    border-bottom: 2px solid rgb(7, 71, 87);
+}
+
+.blue_bg #testimonial .slick-dots li.slick-active button {
+    background: #CAA669;
+}
+
+.blue_bg #contact .contact_overlay .btn input {
+    background: rgba(7, 71, 87, .4);
+}
+
+/* blue_bg end here */
+
+/* orange_bg start here */
+
+.orange_bg #banner .bnr_overlay .banner_content a,
+.orange_bg .common_text h2 span,
+.orange_bg .header nav .navbar-nav .nav-item .nav-link:before,
+.orange_bg .header .navbar .navbar-brand,
+.orange_bg .common_text h2:before,
+.orange_bg .common_text h2:after,
+.orange_bg #about .about_img .img_overlay ul li i,
+.orange_bg #about .bar_item .barfiller .tip,
+.orange_bg #portfolio .port_menu button.active,
+.orange_bg #team .team_member .team_content ul li a i:hover,
+.orange_bg .switcher_box span .fa,
+.orange_bg #testimonial .slick-dots li button,
+.orange_bg #works a,
+.orange_bg #blog .blog_item .blog_content a,
+.orange_bg #top_to_scroll,
+.orange_bg #team .slidNext4,
+.orange_bg #team .slidPrv4{
+    background: #FF5722;
+}
+
+.orange_bg .header nav .navbar-nav .nav-item .nav-link.active,
+.orange_bg .header nav .navbar-nav .nav-item .nav-link:hover,
+.orange_bg #about .about_content h3 span,
+.orange_bg #services .ser_item .ser_icon i,
+.orange_bg #portfolio .port_img .port_overlay i,
+.orange_bg #counter .counter_overlay h3,
+.orange_bg #blog .blog_item .blog_img a .video_overlay i,
+.orange_bg .slidPrv3,
+.orange_bg .slidNext3,
+.orange_bg footer p span {
+    color: #FF5722;
+}
+
+.orange_bg #portfolio .port_img .port_overlay i {
+    border: 2px solid #FF5722;
+}
+
+.orange_bg #about .bar_item .barfiller .tip:after,
+.orange_bg #team .team_member .team_content ul li a i:hover {
+    border-color: #FF5722 transparent;
+}
+
+.orange_bg #services .ser_item:before {
+    border-left: 2px solid #FF5722;
+    border-top: 2px solid #FF5722;
+}
+
+.orange_bg #services .ser_item:after {
+    border-right: 2px solid #FF5722;
+    border-bottom: 2px solid #FF5722;
+}
+
+.orange_bg #testimonial .slick-dots li.slick-active button {
+    background: #CAA669;
+}
+
+.orange_bg #contact .contact_overlay .btn input {
+    background: rgba(255, 87, 34, .4);
+}
+
+/* orange_bg end here */
+
+/* red_bg start here */
+
+.red_bg #banner .bnr_overlay .banner_content a,
+.red_bg .common_text h2 span,
+.red_bg .header nav .navbar-nav .nav-item .nav-link:before,
+.red_bg .header .navbar .navbar-brand,
+.red_bg .common_text h2:before,
+.red_bg .common_text h2:after,
+.red_bg #about .about_img .img_overlay ul li i,
+.red_bg #about .bar_item .barfiller .tip,
+.red_bg #portfolio .port_menu button.active,
+.red_bg #team .team_member .team_content ul li a i:hover,
+.red_bg .switcher_box span .fa,
+.red_bg #testimonial .slick-dots li button,
+.red_bg #works a,
+.red_bg #blog .blog_item .blog_content a,
+.red_bg #top_to_scroll,
+.red_bg #team .slidNext4,
+.red_bg #team .slidPrv4{
+    background: #E02217;
+}
+
+.red_bg .header nav .navbar-nav .nav-item .nav-link.active,
+.red_bg .header nav .navbar-nav .nav-item .nav-link:hover,
+.red_bg #about .about_content h3 span,
+.red_bg #services .ser_item .ser_icon i,
+.red_bg #portfolio .port_img .port_overlay i,
+.red_bg #counter .counter_overlay h3,
+.red_bg #blog .blog_item .blog_img a .video_overlay i,
+.red_bg .slidPrv3,
+.red_bg .slidNext3,
+.red_bg footer p span {
+    color: #E02217;
+}
+
+.red_bg #portfolio .port_img .port_overlay i {
+    border: 2px solid #E02217;
+}
+
+.red_bg #about .bar_item .barfiller .tip:after,
+.red_bg #team .team_member .team_content ul li a i:hover {
+    border-color: #E02217 transparent;
+}
+
+.red_bg #services .ser_item:before {
+    border-left: 2px solid #E02217;
+    border-top: 2px solid #E02217;
+}
+
+.red_bg #services .ser_item:after {
+    border-right: 2px solid #E02217;
+    border-bottom: 2px solid #E02217;
+}
+
+.red_bg #testimonial .slick-dots li.slick-active button {
+    background: #CAA669;
+}
+
+.red_bg  #contact .contact_overlay .btn input {
+    background: rgba(224, 34, 23, .4);
+}
+
+/* red_bg end here */
+
+/* sky_bg start here */
+
+.sky_bg #banner .bnr_overlay .banner_content a,
+.sky_bg .common_text h2 span,
+.sky_bg .header nav .navbar-nav .nav-item .nav-link:before,
+.sky_bg .header .navbar .navbar-brand,
+.sky_bg .common_text h2:before,
+.sky_bg .common_text h2:after,
+.sky_bg #about .about_img .img_overlay ul li i,
+.sky_bg #about .bar_item .barfiller .tip,
+.sky_bg #portfolio .port_menu button.active,
+.sky_bg #team .team_member .team_content ul li a i:hover,
+.sky_bg .switcher_box span .fa,
+.sky_bg #testimonial .slick-dots li button,
+.sky_bg #works a,
+.sky_bg #blog .blog_item .blog_content a,
+.sky_bg #top_to_scroll,
+.sky_bg #team .slidNext4,
+.sky_bg #team .slidPrv4{
+    background: #8BC34A;
+}
+
+.sky_bg .header nav .navbar-nav .nav-item .nav-link.active,
+.sky_bg .header nav .navbar-nav .nav-item .nav-link:hover,
+.sky_bg #about .about_content h3 span,
+.sky_bg #services .ser_item .ser_icon i,
+.sky_bg #portfolio .port_img .port_overlay i,
+.sky_bg #counter .counter_overlay h3,
+.sky_bg #blog .blog_item .blog_img a .video_overlay i,
+.sky_bg .slidPrv3,
+.sky_bg .slidNext3,
+.sky_bg footer p span {
+    color: #8BC34A;
+}
+
+.sky_bg #portfolio .port_img .port_overlay i {
+    border: 2px solid #8BC34A;
+}
+
+.sky_bg #about .bar_item .barfiller .tip:after,
+.sky_bg #team .team_member .team_content ul li a i:hover {
+    border-color: #8BC34A transparent;
+}
+
+.sky_bg #services .ser_item:before {
+    border-left: 2px solid #8BC34A;
+    border-top: 2px solid #8BC34A;
+}
+
+.sky_bg #services .ser_item:after {
+    border-right: 2px solid #8BC34A;
+    border-bottom: 2px solid #8BC34A;
+}
+
+.sky_bg #testimonial .slick-dots li.slick-active button {
+    background: #CAA669;
+}
+
+.sky_bg #contact .contact_overlay .btn input {
+    background: rgba(139, 195, 74, .4);
+}
+
+/* sky_bg end here */
+
+/* green_bg start here */
+
+.green_bg #banner .bnr_overlay .banner_content a,
+.green_bg .common_text h2 span,
+.green_bg .header nav .navbar-nav .nav-item .nav-link:before,
+.green_bg .header .navbar .navbar-brand,
+.green_bg .common_text h2:before,
+.green_bg .common_text h2:after,
+.green_bg #about .about_img .img_overlay ul li i,
+.green_bg #about .bar_item .barfiller .tip,
+.green_bg #portfolio .port_menu button.active,
+.green_bg #team .team_member .team_content ul li a i:hover,
+.green_bg .switcher_box span .fa,
+.green_bg #testimonial .slick-dots li button,
+.green_bg #works a,
+.green_bg #blog .blog_item .blog_content a,
+.green_bg #top_to_scroll,
+.green_bg #team .slidNext4,
+.green_bg #team .slidPrv4{
+    background: #1ABC9C;
+}
+
+.green_bg .header nav .navbar-nav .nav-item .nav-link.active,
+.green_bg .header nav .navbar-nav .nav-item .nav-link:hover,
+.green_bg #about .about_content h3 span,
+.green_bg #services .ser_item .ser_icon i,
+.green_bg #portfolio .port_img .port_overlay i,
+.green_bg #counter .counter_overlay h3,
+.green_bg #blog .blog_item .blog_img a .video_overlay i,
+.green_bg .slidPrv3,
+.green_bg .slidNext3,
+.green_bg footer p span {
+    color: #1ABC9C;
+}
+
+.green_bg #portfolio .port_img .port_overlay i {
+    border: 2px solid #1ABC9C;
+}
+
+.green_bg #about .bar_item .barfiller .tip:after,
+.green_bg #team .team_member .team_content ul li a i:hover {
+    border-color: #1ABC9C transparent;
+}
+
+.green_bg #services .ser_item:before {
+    border-left: 2px solid #1ABC9C;
+    border-top: 2px solid #1ABC9C;
+}
+
+.green_bg #services .ser_item:after {
+    border-right: 2px solid #1ABC9C;
+    border-bottom: 2px solid #1ABC9C;
+}
+
+.green_bg #testimonial .slick-dots li.slick-active button {
+    background: #CAA669;
+}
+
+.green_bg #contact .contact_overlay .btn input {
+    background: rgba(26, 188, 156, .4);
+}
+
+/* green_bg end here */
+
+/* yellow_bg start here */
+
+.yellow_bg #banner .bnr_overlay .banner_content a,
+.yellow_bg .common_text h2 span,
+.yellow_bg .header nav .navbar-nav .nav-item .nav-link:before,
+.yellow_bg .header .navbar .navbar-brand,
+.yellow_bg .common_text h2:before,
+.yellow_bg .common_text h2:after,
+.yellow_bg #about .about_img .img_overlay ul li i,
+.yellow_bg #about .bar_item .barfiller .tip,
+.yellow_bg #portfolio .port_menu button.active,
+.yellow_bg #team .team_member .team_content ul li a i:hover,
+.yellow_bg .switcher_box span .fa,
+.yellow_bg #testimonial .slick-dots li button,
+.yellow_bg #works a,
+.yellow_bg #blog .blog_item .blog_content a,
+.yellow_bg #top_to_scroll,
+.yellow_bg #team .slidNext4,
+.yellow_bg #team .slidPrv4{
+    background: #673AB7;
+}
+
+.yellow_bg .header nav .navbar-nav .nav-item .nav-link.active,
+.yellow_bg .header nav .navbar-nav .nav-item .nav-link:hover,
+.yellow_bg #about .about_content h3 span,
+.yellow_bg #services .ser_item .ser_icon i,
+.yellow_bg #portfolio .port_img .port_overlay i,
+.yellow_bg #counter .counter_overlay h3,
+.yellow_bg #blog .blog_item .blog_img a .video_overlay i,
+.yellow_bg .slidPrv3,
+.yellow_bg .slidNext3,
+.yellow_bg footer p span {
+    color: #673AB7;
+}
+
+.yellow_bg #portfolio .port_img .port_overlay i {
+    border: 2px solid #673AB7
+}
+
+.yellow_bg #about .bar_item .barfiller .tip:after,
+.yellow_bg #team .team_member .team_content ul li a i:hover {
+    border-color: #673AB7 transparent;
+}
+
+.yellow_bg #services .ser_item:before {
+    border-left: 2px solid #673AB7;
+    border-top: 2px solid #673AB7;
+}
+
+.yellow_bg #services .ser_item:after {
+    border-right: 2px solid #673AB7;
+    border-bottom: 2px solid #673AB7;
+}
+
+.yellow_bg #testimonial .slick-dots li.slick-active button {
+    background: #CAA669;
+}
+
+.yellow_bg #contact .contact_overlay .btn input {
+    background: rgba(103, 58, 183, .4)
+}
+
+/* yellow_bg end here */
+
+/**********************************************
+     color pallate part end
+***********************************************/

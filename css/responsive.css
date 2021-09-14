@@ -1,0 +1,505 @@
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .common_text h2::before {
+        left: 39%;
+    }
+    .common_text h2::after {
+        left: 52%;
+    }
+    .common_text p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .header .navbar .navbar-brand {
+        font-size: 25px;
+    }
+    .header nav .navbar-nav .nav-item {
+        padding: 0px 10px;
+    }
+    .header nav .navbar-nav .nav-item .nav-link {
+        font-size: 13px;
+        line-height: 65px;
+    }
+    #banner .bnr_overlay .banner_content h3 {
+        font-size: 23px;
+    }
+    #banner .bnr_overlay .banner_content h1 {
+        font-size: 37px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+    #banner .bnr_overlay .banner_content p {
+        font-size: 13px;
+        padding-bottom: 20px;
+        line-height: 23px;
+    }
+    #banner .bnr_overlay .banner_content a {
+        font-size: 13px;
+        padding: 0px 28px;
+        line-height: 38px;
+        border-radius: 30px;
+    }
+    #about,
+    #services,
+    #portfolio,
+    #counter .counter_overlay,
+    #team,
+    #works,
+    #blog,
+    #contact .contact_overlay {
+        padding: 50px 0px;
+    }
+    #about .about_img .img_overlay ul {
+        margin-top: 60px;
+    }
+    #about .about_img .img_overlay ul li i {
+        line-height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        margin: 10px 0px;
+    }
+    #about .about_content h3 {
+        font-size: 25px;
+    }
+    #about .about_content h4 {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    #about .about_content p {
+        font-size: 13px;
+        line-height: 23px;
+        padding-top: 10px;
+    }
+    #about .about_content .bar_item h4 {
+        font-size: 14px !important;
+        margin-top: 10px;
+    }
+    #about .about_content .bar_item .barfiller {
+        width: 100%;
+        height: 5px;
+        background: #777;
+        position: relative;
+        margin-top: 12px;
+    }
+    #services .ser_item {
+        margin-top: 25px;
+    }
+    #services .ser_item .ser_icon i {
+        font-size: 25px;
+        padding-top: 25px;
+    }
+    #services .ser_item .ser_content h4 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    #services .ser_item .ser_content p {
+        font-size: 13px;
+        line-height: 23px;
+        padding: 8px 5px 25px;
+    }
+    #portfolio .port_menu {
+        margin-top: 25px;
+    }
+    #portfolio .port_menu button {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    #counter .counter_overlay i {
+        font-size: 28px;
+    }
+    #counter .counter_overlay h3 {
+        font-size: 36px;
+        padding-top: 8px;
+    }
+    #counter .counter_overlay p {
+        font-size: 13px;
+    }
+    #team .team_member .team_content h4 {
+        font-size: 14px;
+    }
+    #team .team_member .team_content h5 {
+        font-size: 14px;
+    }
+    #team .team_member .team_content ul li a i {
+        line-height: 28px;
+        width: 28px;
+    }
+    #testimonial {
+        padding: 55px 0px 90px;
+    }
+    #team .team_member {
+        margin-top: 20px;
+    }
+    #testimonial .test_item .test_img {
+        height: 95px;
+        width: 95px;
+    }
+    #testimonial .test_item .test_img1 {
+        height: 85px;
+        width: 85px;
+    }
+    #testimonial .test_item .test_content ul li i {
+        font-size: 14px;
+    }
+    #testimonial .test_item .test_content h3 {
+        font-size: 23px;
+    }
+    #testimonial .test_item .test_content p {
+        font-size: 13px;
+        line-height: 23px;
+        padding: 10px 85px;
+    }
+    #testimonial .test_item .test_content h5 {
+        font-size: 13px;
+    }
+    #works p {
+        font-size: 13px;
+    }
+    #works h3 {
+        font-size: 32px;
+    }
+    #works a {
+        padding: 0px 25px;
+        line-height: 30px;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    #blog .blog_item .blog_img .blog_img_slide {
+        height: 120px;
+    }
+    #blog .blog_item .blog_img {
+        height: 120px;
+    }
+    #blog .blog_item .blog_content {
+        padding: 12px 0px;
+    }
+    #blog .blog_item .blog_content h5 {
+        font-size: 13px;
+    }
+    #blog .blog_item .blog_content h4 {
+        padding: 8px 5px 0px;
+        font-size: 15px;
+    }
+    #blog .blog_item .blog_content p {
+        font-size: 13px;
+        line-height: 23px;
+        padding: 10px 10px;
+        text-align: justify;
+    }
+    #blog .blog_item .blog_content a {
+        padding: 0px 25px;
+        line-height: 32px;
+        font-size: 13px;
+    }
+    #blog .blog_item .blog_img a .video_overlay i {
+        font-size: 50px;
+    }
+    #contact .contact_overlay input {
+        height: 35px;
+        margin-top: 25px;
+        font-size: 13px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .common_text h2 {
+        font-size: 22px;
+    }
+    .common_text h2::before {
+        left: 36%;
+    }
+    .common_text h2::after {
+        left: 52%;
+    }
+    .common_text p {
+        font-size: 13px;
+        line-height: 23px;
+        padding: 5px 55px 10px;
+    }
+    .navbar-toggler {
+        background: #FFF;
+        padding: 3px 8px;
+        margin: 15px 0px;
+        transition: all linear .3s;
+        border-radius: 5px;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        transition: all linear .3s;
+    }
+    .header .navbar .navbar-brand {
+        font-size: 25px;
+    }
+    .navbar-nav {
+        background: #222;
+        padding: 20px 0px;
+        border-top: 1px solid rgba(255, 255, 255, .6);
+    }
+    .header nav .navbar-nav .nav-item {
+        padding: 0px 10px;
+        text-align: center;
+    }
+    .header nav .navbar-nav .nav-item .nav-link {
+        font-size: 14px;
+        line-height: 30px;
+        display: inline-block;
+    }
+    .header nav .navbar-nav .nav-item .nav-link.active:before,
+    .header nav .navbar-nav .nav-item .nav-link:hover:before {
+        opacity: 1;
+    }
+    #banner .bnr_overlay .banner_content h3 {
+        font-size: 20px;
+    }
+    #banner .bnr_overlay .banner_content h1 {
+        font-size: 30px;
+        padding-top: 5px;
+        padding-bottom: 8px;
+    }
+    #banner .bnr_overlay .banner_content p {
+        font-size: 13px;
+        padding-bottom: 15px;
+        line-height: 23px;
+    }
+    #banner .bnr_overlay .banner_content a {
+        font-size: 13px;
+        padding: 0px 25px;
+        line-height: 32px;
+        border-radius: 25px;
+    }
+    #about,
+    #services,
+    #portfolio,
+    #counter .counter_overlay,
+    #team,
+    #works,
+    #blog,
+    #contact .contact_overlay {
+        padding: 30px 0px;
+    }
+    #about .about_img .img_overlay ul {
+        margin-top: 40px;
+    }
+    #about .about_img .img_overlay ul li i {
+        border-radius: 5px;
+        margin: 10px 0px;
+    }
+    #about .about_content h3 {
+        font-size: 22px;
+    }
+    #about .about_content h4 {
+        font-size: 18px;
+        padding-top: 5px;
+    }
+    #about .about_content p {
+        font-size: 13px;
+        line-height: 23px;
+        padding-top: 10px;
+    }
+    #about .about_content .bar_item h4 {
+        font-size: 14px !important;
+        margin-top: 10px;
+    }
+    #about .about_content .bar_item .barfiller {
+        width: 100%;
+        height: 5px;
+        background: #777;
+        position: relative;
+        margin-top: 12px;
+    }
+    #services .ser_item {
+        margin-top: 25px;
+    }
+    #services .ser_item .ser_icon i {
+        font-size: 25px;
+        padding-top: 25px;
+    }
+    #services .ser_item .ser_content h4 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    #services .ser_item .ser_content p {
+        font-size: 13px;
+        line-height: 23px;
+        padding: 8px 5px 25px;
+    }
+    #portfolio .port_menu {
+        margin-top: 25px;
+    }
+    #portfolio .port_menu button {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    #counter .counter_overlay i {
+        font-size: 28px;
+        padding-top: 15px;
+    }
+    #counter .counter_overlay h3 {
+        font-size: 36px;
+        padding-top: 0px;
+    }
+    #counter .counter_overlay p {
+        font-size: 13px;
+        padding-bottom: 15px;
+    }
+    #team .team_member {
+        margin-top: 20px;
+    }
+    #team .team_member .team_content h4 {
+        font-size: 14px;
+    }
+    #team .team_member .team_content h5 {
+        font-size: 14px;
+    }
+    #team .team_member .team_content ul li a i {
+        line-height: 28px;
+        width: 28px;
+    }
+    #team .slidPrv4 {
+        position: absolute;
+        top: -25px;
+        left: 13px;
+        background: #c33;
+        line-height: 35px;
+        width: 35px;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    #team .slidNext4 {
+        position: absolute;
+        top: -25px;
+        right: 13px;
+        background: #c33;
+        line-height: 35px;
+        width: 35px;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    #testimonial {
+        padding: 55px 0px 90px;
+    }
+    #testimonial .test_item .test_img {
+        height: 95px;
+        width: 95px;
+    }
+    #testimonial .test_item .test_img1 {
+        height: 85px;
+        width: 85px;
+    }
+    #testimonial .test_item .test_content ul li i {
+        font-size: 14px;
+    }
+    #testimonial .test_item .test_content h3 {
+        font-size: 23px;
+    }
+    #testimonial .test_item .test_content p {
+        font-size: 13px;
+        line-height: 23px;
+        padding: 10px 85px;
+    }
+    #testimonial .test_item .test_content h5 {
+        font-size: 13px;
+    }
+    #testimonial .slick-dots {
+        left: 43%;
+    }
+    #works p {
+        font-size: 13px;
+    }
+    #works h3 {
+        font-size: 32px;
+    }
+    #works a {
+        padding: 0px 25px;
+        line-height: 30px;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    #blog .blog_item .blog_img .blog_img_slide {
+        height: 120px;
+    }
+    #blog .blog_item .blog_img {
+        height: 120px;
+    }
+    #blog .blog_item .blog_content {
+        padding: 12px 0px;
+    }
+    #blog .blog_item .blog_content h5 {
+        font-size: 13px;
+    }
+    #blog .blog_item .blog_content h4 {
+        padding: 8px 5px 0px;
+        font-size: 15px;
+    }
+    #blog .blog_item .blog_content p {
+        font-size: 13px;
+        line-height: 23px;
+        padding: 10px 10px;
+        text-align: justify;
+    }
+    #blog .blog_item .blog_content a {
+        padding: 0px 25px;
+        line-height: 32px;
+        font-size: 13px;
+    }
+    #blog .blog_item .blog_img a .video_overlay i {
+        font-size: 50px;
+    }
+    #contact .contact_overlay input {
+        height: 35px;
+        margin-top: 25px;
+        font-size: 13px;
+    }
+    .switcher_box {
+        top: 150px;
+    }
+    .switcher_box span .fa {
+        font-size: 20px;
+        line-height: 25px;
+        width: 25px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .common_text h2 {
+        font-size: 22px;
+    }
+    .common_text h2::before {
+        left: 25%;
+    }
+    .common_text h2::after {
+        left: 55%;
+    }
+    .common_text p {
+        ;
+        padding: 5px 16px 10px;
+    }
+    #banner .bnr_overlay .banner_content h1 {
+        font-size: 25px;
+    }
+    #banner .bnr_overlay .banner_content h3 {
+        font-size: 18px;
+    }
+    #portfolio .port_menu button {
+        font-size: 14px;
+        padding: 0px 7px;
+    }
+    #works h3 {
+        font-size: 25px;
+    }
+    #testimonial .test_item .test_content p {
+        padding: 10px 25px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+
+
+}
